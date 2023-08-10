@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Count Form Elements</title>
+</head>
+<body>
+<form id="myForm">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" /><br />
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" /><br />
+<label for="age">Age:</label>
+<input type="number" id="age" name="age" /><br />
+<label for="gender">Gender:</label>
+<input type="radio" id="gender" name="gender" value="male" /> Male
+<input type="radio" id="gender" name="gender" value="female" /> Female<br />
+<label for="hobbies">Hobbies:</label>
+<input type="checkbox" id="hobby1" name="hobbies" value="reading" /> Reading
+<input type="checkbox" id="hobby2" name="hobbies" value="gaming" /> Gaming
+<input type="checkbox" id="hobby3" name="hobbies" value="traveling" /> Traveling<br />
+<input type="submit" value="Submit" />
+</form>
+<script>
+// Get the form element
+const form = document.getElementById('myForm');
+// Count the number of elements in the form
+const elementCount = form.querySelectorAll('*').length;
+// Display the count
+console.log('Number of elements in the form:', elementCount);
+</script>
+</body>
+</html>
